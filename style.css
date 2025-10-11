@@ -1,3 +1,4 @@
+
     h1 {
     color: #0097B2; font-family:"Philosopher", sans-serif; font-size: 30pt; line-height: 0.7;
      padding: 9px;
@@ -20,7 +21,7 @@
 }
 
     s2 {
-    color: #0097B2; font-family:"Philosopher", sans-serif; font-size: 25pt; font-weight: bolder; border-bottom: 2px solid #0097B2;
+    color: #0097B2; font-family:"Philosopher", sans-serif; font-size: 25pt; font-weight: bolder;
     display: inline-block;
     text-align: center;
     margin-left: auto;
@@ -39,5 +40,38 @@
       transform: translate(-50%, -50%);
       color: #0097B2;
       font-size: 40px; font-weight: bold; font-family: "Philosopher", sans-serif ;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+    }
+
+    .puey {
+    width: auto;
+    height: auto;
+    margin: 50pt;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    }
+
+    .q1 {
+        color: #0097B2; font-family: "Philosopher", sans-serif ; text-align: center; font-size: 25px;
+    }
+
+    .alum {
+        width: 263px;
+        height: 328px;
+        border-radius: 40px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .alumname {
+        color: #0097B2; font-family: "Philosopher", sans-serif ; text-align: center; font-size: 17px; font-weight: bolder;
+    }
+
+    .tabalum {
+    margin: auto;
+    border-collapse: collapse;
+    width: 50%;
     }
