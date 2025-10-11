@@ -44,8 +44,8 @@
     }
 
     .puey {
-    width: auto;
-    height: auto;
+    width: 1633px;
+    height: 627px;
     margin: 50pt;
     display: block;
     justify-content: center;
@@ -63,13 +63,18 @@
         height: 328px;
         border-radius: 40px;
         margin: auto;
-        padding: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     .alumname {
         color: #0097B2; font-family: "Philosopher", sans-serif ; text-align: center; font-size: 17px; font-weight: bolder;
     }
 
+    .alumdet {
+        color: #0097B2; font-family: "Philosopher", sans-serif ; text-align: center; font-size: 12px; padding-top: 30px;
+    }
+    
     .tabalum {
     margin: auto;
     border-collapse: collapse;
