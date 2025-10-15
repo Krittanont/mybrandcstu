@@ -82,14 +82,14 @@ p {
 
 .nav a {
     color: white;
-    font-family: "Noto Sans Thai", sans-serif;
-    font-size: 17px;
+    font-family: "Philosopher",sans-serif ;
+    font-size: 20px;
     text-decoration: none;
     margin-left: 1.5rem;
 }
 
 .nav a:hover {
-    color: #0097B2;
+    color: #000000;
 }
 
 .logo {
@@ -132,7 +132,7 @@ p {
 
 .tabbac a:hover {
     color: #ffffff; background-color: #0097B2;border: 2px solid #0097B2; padding: 5px;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 .site-footer {
