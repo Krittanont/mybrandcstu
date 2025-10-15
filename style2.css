@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 60pt;
-    font-family: "Philosopher",sans-serif;
+    font-family: "Inter", sans-serif;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .hero span {
-    font-size: 50px; text-align: center; display: block; color: #9ff1ff;
+    font-size: 50px; text-align: center; display: block; color: #29c3df;
 }
 
 .content {
@@ -96,17 +96,21 @@ p {
     font-size: 33px; line-height: 0.7;
 }
 
+.logo a {
+    color: #ffffff; text-decoration: none;
+}
+
 .logotu {
     font-size: 20px;
 }
 
 .content h2 {
-    font-size: 60px; font-family: "Philosopher",sans-serif ; color: #0097B2; text-align: center;
+    font-size: 60px; font-family: "Inter", sans-serif; color: #0097B2; text-align: center;
 }
 
 .content p1 {
     font-size: 25px;
-    font-family: "Philosopher", sans-serif;
+    font-family: "Inter", sans-serif;
         color: #0097B2;
     text-align: center;
     display: block; line-height: 1.9;
@@ -114,7 +118,7 @@ p {
 
 .tabbac {
     color: #0097B2;
-    font-family: "Philosopher", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     margin: auto;
     border-collapse: collapse;
@@ -123,11 +127,12 @@ p {
 }
 
 .tabbac a {
-    color: #000000; text-decoration: none;
+    color: #000000; text-decoration: none; 
 }
 
 .tabbac a:hover {
-    color: #0097B2;
+    color: #ffffff; background-color: #0097B2;border: 2px solid #0097B2; padding: 5px;
+    border-radius: 5px;
 }
 
 .site-footer {
