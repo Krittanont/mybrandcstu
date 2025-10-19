@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 60pt;
-    font-family: "Inter", sans-serif;
+    font-family: "B612", sans-serif;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -68,7 +68,7 @@ p {
 
 .site-header {
     position: fixed;
-    font-family: "Philosopher",sans-serif ;
+    font-family: "B612", sans-serif;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -82,8 +82,8 @@ p {
 
 .nav a {
     color: white;
-    font-family: "Philosopher",sans-serif ;
-    font-size: 20px;
+    font-family: "B612", sans-serif;
+    font-size: 17px;
     text-decoration: none;
     margin-left: 1.5rem;
     position: relative;
@@ -106,12 +106,12 @@ p {
 }
 
 .content h2 {
-    font-size: 60px; font-family: "Inter", sans-serif; color: #0097B2; text-align: center;
+    font-size: 60px; font-family: "B612", sans-serif; color: #0097B2; text-align: center;
 }
 
 .content p1 {
     font-size: 25px;
-    font-family: "Inter", sans-serif;
+    font-family: "B612", sans-serif;
         color: #0097B2;
     text-align: center;
     display: block; line-height: 1.9;
@@ -119,8 +119,8 @@ p {
 
 .tabbac {
     color: #0097B2;
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-family: "B612", sans-serif;
+    font-size: 18px;
     margin: auto;
     border-collapse: collapse;
     width: 75%;
