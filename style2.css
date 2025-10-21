@@ -95,11 +95,11 @@ p {
 }
 
 .logo {
-    font-size: 33px; line-height: 0.7;
+    font-size: 33px; line-height: 0.7; 
 }
 
 .logo a {
-    color: #ffffff; text-decoration: none;
+    color: #ffffff; text-decoration: none; font-weight: bold;
 }
 
 .logotu {
