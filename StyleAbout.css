@@ -1,0 +1,49 @@
+.site-header {
+    font-family: "B612", sans-serif;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 10;
+    background: rgb(255, 255, 255);
+    color: #A9A9A9
+}
+
+.nav a {
+    color: #A9A9A9;
+    font-family: "B612", sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    position: relative;
+    transition: all 0.4s ease
+}
+
+.nav a:hover {
+    color: #4298b5; width: 100%;
+}
+
+.logo {
+    font-size: 33px; line-height: 0.7; 
+}
+
+.logo a {
+    color: #000000; text-decoration: none; font-weight: bold;
+}
+
+.logotu {
+    font-size: 20px;
+}
+
+.head {
+    font-family: "B612", sans-serif;
+}
+
+.head h1 {
+    color: #4298b5; position: relative; transition: all 0.4s ease; font-size: 35pt; text-align: center; 
+}
+
+.head h1:hover {
+    color: #A9A9A9;
+}
