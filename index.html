@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-         @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&display=swap');
-     </style>
+        @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&display=swap');
+    </style>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     </header>
 
     <section class="hero">
-        <p1 class="display-1">THAMMASAT SCHOOL OF COMPUTING <br> <span class="display-6 fw-bold">Decades of Logic</span></p1>
+        <p1 class="display-1">THAMMASAT SCHOOL OF COMPUTING <br> <span class="display-6">Decades of Logic</span></p1>
     </section>
 
     <section class="degree">
@@ -72,6 +72,19 @@
             </nav>
         </div>
     </footer>
+
+<script>
+    const header = document.querySelector('.site-header');
+    const hero = document.querySelector('.hero'); // section หน้าหลัก
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > hero.offsetHeight) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
 
 </body>
 

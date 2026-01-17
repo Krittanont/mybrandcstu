@@ -23,12 +23,12 @@ body {
 }
 
 .hero p1 {
-    color: rgb(255, 255, 255); font-size: 4rem;
-    font-weight: bolder; font-family: "Arsenal", sans-serif; font-weight: 600;
+    color: #c3002f; font-size: 4rem;
+    font-weight: bolder; font-family: "Outfit", sans-serif; font-weight: 600;
 }
 
 .hero span {
-    font-size: 2.5rem; text-align: center; display: block; color: #008080;
+    font-size: 2.5rem; text-align: center; display: block; color: #ffffff;
 }
 
 .content {
@@ -72,9 +72,14 @@ p {
     align-items: center;
     padding: 1rem 2rem;
     z-index: 10;
-    background: #6c6c6c(126, 126, 126, 0.3);
-    backdrop-filter: blur(100px);
+    background: #6c6c6c(126, 126, 126, 0.25);
+    backdrop-filter: blur(1vw);
     color: #ffffff;
+    transition: background 0.3s ease;
+}
+
+.site-header.scrolled {
+    background: #c3002f;
 }
 
 .nav a {
