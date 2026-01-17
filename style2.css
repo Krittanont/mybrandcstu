@@ -23,8 +23,8 @@ body {
 }
 
 .hero p1 {
-    color: #c3002f; font-size: 4rem;
-    font-weight: bolder; font-family: "Outfit", sans-serif; font-weight: 600;
+    color: #ffffff;letter-spacing: 3px;
+    font-weight: bolder; font-family: 'Futura Std', sans-serif; font-weight: 600;
 }
 
 .hero span {
@@ -65,7 +65,7 @@ p {
 
 .site-header {
     position: fixed;
-    font-family: "Arsenal", sans-serif; font-weight: bold;
+    font-family: 'Futura Std', sans-serif;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -75,17 +75,18 @@ p {
     background: #6c6c6c(126, 126, 126, 0.25);
     backdrop-filter: blur(1vw);
     color: #ffffff;
-    transition: background 0.3s ease;
+    transition: background 0.7s ease;
 }
 
 .site-header.scrolled {
-    background: #c3002f;
+    background: #ffffff; box-shadow: 0 1px 1vw rgba(0, 0, 0, 0.1);
 }
 
-.nav a {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1); border-radius: 100px; padding-left: 10px; padding-right: 10px;
-    font-family: "Arsenal", sans-serif; padding-top: 5px; padding-bottom: 5px;
+.site-header.scrolled .nav a {
+    color: #000000;
+    font-family: "Arsenal", sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 1rem;
     text-decoration: none;
     margin-left: 1.5rem;
@@ -93,8 +94,52 @@ p {
     transition: all 0.4s ease;
 }
 
-.nav a:hover {
-    color: #000000; background-color: #ffffff;
+.site-header.scrolled .nav a:hover {
+    color: #008080;
+}
+
+.site-header.scrolled .logo {
+    font-size: 2rem;
+    line-height: 0.7;
+}
+
+.site-header.scrolled .logo a {
+    color: #008080;
+    text-decoration: none;
+}
+
+.site-header.scrolled .logotu {
+    font-size: 1rem; color: #008080;
+    font-family: "Arsenal", sans-serif;
+}
+
+.nav a {
+    color: white;
+    font-family: "Arsenal", sans-serif; padding-top: 5px; padding-bottom: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    position: relative;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 4px;
+    /* ปรับให้ไม่ชนขอบปุ่ม */
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    transition: all 0.4s ease;
+    transform: translateX(0%);
+}
+
+.nav a:hover::after {
+    width: 100%;
+    /* ไม่ต้อง 100% จะดูโปรกว่า */
 }
 
 .logo {
@@ -102,7 +147,7 @@ p {
 }
 
 .logo a {
-    color: #ffffff; text-decoration: none; font-weight: bold;
+    color: #ffffff; text-decoration: none;
 }
 
 .logotu {
