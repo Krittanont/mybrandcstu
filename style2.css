@@ -17,7 +17,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +39,6 @@ body {
     z-index: 2;
     box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.15);
     padding: 3rem 2rem;
-    min-height: 150vh;
 }
 
 .content img {
@@ -77,7 +75,7 @@ p {
     background: #6c6c6c(126, 126, 126, 0.25);
     backdrop-filter: blur(1vw);
     color: #ffffff;
-    transition: background 0s ease;
+    transition: background 0.5s ease;
 }
 
 .site-header.scrolled {
@@ -162,7 +160,7 @@ p {
 }
 
 .logo {
-    font-size: 2rem; line-height: 0.7; font-weight: 600; letter-spacing: 2.5px;
+    font-size: 2rem; line-height: 0.7; font-weight: 600; letter-spacing: 2.5px; 
 }
 
 .logo a {
@@ -170,7 +168,7 @@ p {
 }
 
 .logo a span {
-    color: #ffffff; position: relative;
+    color: #c3002f; position: relative;
         top: -0.1em;
     text-decoration: none;
 }
@@ -180,13 +178,11 @@ p {
 }
 
 .content h2 {
-    font-family: 'THAMMASAT', sans-serif; color:#c3002f; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); font-weight: BOLD; letter-spacing: -2px;
+    font-family: 'Futura Std', sans-serif; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); font-weight: 500; letter-spacing: 2px;
 }
 
-.content p1 {
-    font-family: "Arsenal", sans-serif;
-    color: #000000;
-    text-align: center;
+p1 {
+    font-family: "Futura Std", sans-serif;
     display: block; line-height: 1.9;
 }
 
@@ -218,13 +214,18 @@ p {
 }
 
 .content2 {
-    color: #000000; font-family: "THAMMASAT", sans-serif; background-color: #F5F5F5; font-weight: bold;
+    color: #ffffff; font-family: "Futura Std", sans-serif; background-color: #F5F5F5; font-weight: 500; background-image: url(resource/puey3.jpg
+    );
     position: relative;
         height: 70%;
         background-size: cover;
         background-position: center;
         display: flex;
         text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.content1 {
+    background-color: #fcfcfc; min-height: 50%; font-family: "Futura Std", sans-serif; letter-spacing: 1.9px;
 }
 
 .site-footer {
@@ -235,18 +236,17 @@ p {
 }
 
 .footer-content p {
-    font-family: "Arsenal", sans-serif;
+    font-family: "Futura Std", sans-serif;
     margin-bottom: 1rem;
     font-size: 1rem;
 }
 
 .footer-nav a {
-    color: #000000; font-family: "Arsenal", sans-serif; font-size: 15px;
+    color: #000000; font-family: "Futura Std", sans-serif; font-size: 15px;
     margin: 0 1rem;
-    text-decoration: none;
-    font-weight: 500;
+    text-decoration: none; position: relative; transition: all 0.3s ease;
 }
 
 .footer-nav a:hover {
-    color: #0097B2;
+    color: #c3002f;
 }
