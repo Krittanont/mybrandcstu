@@ -25,6 +25,12 @@
             <a class="fs-6" href="#">NEWS & EVENTS</a>
             <a class="fs-6" href="#">SCI TU WEBSITE</a>
         </nav>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
     </header>
 
     <section class="hero">
@@ -33,10 +39,10 @@
 
     <section class="degree">
         <div class="tabbac d-flex justify-content-center gap-3 py-4">
-                    <div class="px-5"><a href="">BACHELOR</a></div>
-                    <div class="px-5"><a href="">MASTER</a></div>
-                    <div class="px-5"><a href="">PH.D.</a></div>
-                    <div class="px-5"><a href="">CERTIFICATE</a></div>
+                    <div class="px-5 fw-semibold"><a href="">BACHELOR</a></div>
+                    <div class="px-5 fw-semibold"><a href="">MASTER</a></div>
+                    <div class="px-5 fw-semibold"><a href="">PH.D.</a></div>
+                    <div class="px-5 fw-semibold"><a href="">CERTIFICATE</a></div>
         </div>
     </section>
 
@@ -86,6 +92,15 @@
         } else {
             header.classList.remove('scrolled');
         }
+    });
+</script>
+
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
     });
 </script>
 
