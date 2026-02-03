@@ -66,20 +66,21 @@ p {
 .site-header {
     position: fixed;
     font-family: 'Urbanist', sans-serif;
-    width: 100%; border-radius:0 0 1.5rem 1.5rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     z-index: 10;
-    background: #6c6c6c(126, 126, 126, 0.25);
-    backdrop-filter: blur(2vw);
-    color: #ffffff;
-    transition: background 0.9s ease;
+    background: linear-gradient(
+  to bottom,
+  rgba(0, 0, 0, 0.25),
+  rgba(0, 0, 0, 0)
+); transition: background 0.9s ease;
 }
 
 .site-header.scrolled {
-    background: #ffffff;
+    background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03) ;
 }
 
 .site-header.scrolled .nav a {
@@ -238,6 +239,68 @@ p {
     }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.f {
+  height: 100vh;
+  background: #ffffff; /* เริ่มต้นขาว */
+  position: relative;
+  overflow: hidden;
+}
+
+/* วงกลมพื้นหลัง ขยายจากล่าง */
+.f::before {
+  content: "";
+  position: absolute;
+
+  width: 200vmax;
+  height: 200vmax;
+  border-radius: 30% 30% 30% 30%;
+
+  background: linear-gradient(
+    180deg,#8eb6cd,#ffffff,#ffffff);
+
+  left: 50%;
+  bottom: -100vmax; /* เริ่มอยู่นอกจอด้านล่าง */
+  transform: translateX(-50%) scale(0);
+  
+  animation: circleUp 2s ease-out forwards;
+  z-index: 1;
+}
+
+/* รูป b */
+.float-up {
+  position: absolute;
+  bottom: -92vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95vw;
+
+  animation: slideUp 2.5s ease-out forwards;
+  animation-delay: 2s; /* รอวงกลมก่อน */
+  z-index: 2;
+}
+
+/* วงกลมขยายขึ้น */
+@keyframes circleUp {
+  to {
+    transform: translateX(-50%) scale(1);
+    bottom: -100vmax;
+  }
+}
+
+/* ภาพ b เลื่อนขึ้น */
+@keyframes slideUp {
+  to {
+    bottom: 0;
+  }
+}
+
+
 .content h2 {
     font-family: 'Urbanist', sans-serif; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); font-weight: 500; letter-spacing: 2px;
 }
@@ -248,14 +311,15 @@ p1 {
 }
 
 .tabbac {
-    font-family: "Urbanist", sans-serif; background-color: #c3002f; font-weight: 400; letter-spacing: 2px;
+    font-family: "Urbanist", sans-serif; background-color:#f7f7f7 ;
+  font-weight: 200; letter-spacing: 2px;
     margin: auto;
     border-collapse: collapse;
     position: relative;
 }
 
 .tabbac a {
-    color: #ffffff; text-decoration: none; transition: all 0.4s ease; position: relative;
+    color: #8eb6cd; text-decoration: none; transition: all 0.4s ease; position: relative;
 }
 
 .tabbac a::after {
@@ -265,7 +329,7 @@ p1 {
     bottom: -10%;
     width: 0;
     height: 1px;
-    background-color: #ffffff;
+    background-color: #8eb6cd;
     transition: all 0.4s ease;
     transform: translateX(0%);
 }
