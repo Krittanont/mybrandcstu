@@ -278,10 +278,10 @@ p {
   bottom: -92vh;
   left: 50%;
   transform: translateX(-50%);
-  width: 95vw;
+  width: 100%;
 
-  animation: slideUp 2.5s ease-out forwards;
-  animation-delay: 2s; /* รอวงกลมก่อน */
+  animation: slideUp 1.5s ease-out forwards;
+  animation-delay: 0.5s; /* รอวงกลมก่อน */
   z-index: 2;
 }
 
