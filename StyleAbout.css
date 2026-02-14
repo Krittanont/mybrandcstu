@@ -1,0 +1,63 @@
+.site-header {
+    position: fixed;
+    font-family: "Arsenal", sans-serif;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 10;
+    background: #6c6c6c(126, 126, 126, 0.3);
+    backdrop-filter: blur(100px);
+    color: #ffffff;
+}
+
+.nav a {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Arsenal", sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.nav a:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-size: 2rem;
+    line-height: 0.7;
+}
+
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logotu {
+    font-size: 1rem;
+    font-family: "Arsenal", sans-serif;
+}
+
+.head {
+    font-family: "B612", sans-serif;
+}
+
+.head h1 {
+    color: #4298b5; position: relative; transition: all 0.4s ease; font-size: 35pt; text-align: center; 
+}
+
+.head h1:hover {
+    color: #A9A9A9;
+}

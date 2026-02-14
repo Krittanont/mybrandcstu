@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MYCSTU</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fonts-archive-futura-std/FuturaStd.css" type="text/css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <div class="intro-screen">
+        <div class="intro-content">
+            <h1 class="display-1 fw-semibold">CS<span>×</span>TU</h1>
+            <button class="enter-btn">ENTER WEBSITE</button>
+        </div>
+    </div>
+
+    <header class="site-header py-4">
+        <div class="logo d-flex justify-content-center align-items-center fw-bold"><a href="index.html">CS<span>×</span>TU</a></div>
+        <nav class="nav fw-light">
+            <a class="fs-5" href="news&info.html">About Us</a>
+            <a class="fs-5" href="#">Learning at CSTU</a>
+            <a class="fs-5" href="#">Projects & Innovation</a>
+            <a class="fs-5" href="#">News & Events</a>
+            <a class="fs-5" href="#">SCI TU Website</a>
+            <a class="fs-5 fw-bold" href="register.html">Register</a>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    </header>
+
+    <section class="f">
+    
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="resource/cloud.mp4" type="video/mp4">
+        </video>
+    
+        <img src="resource/tu.png" class="float-up" alt="image b">
+    
+    </section>
+
+    <section class="degree">
+        <div class="tabbac d-flex justify-content-center gap-3 py-4">
+                    <div class="px-5 fw-bold fs-5"><a href="">Bachelor</a></div>
+                    <div class="px-5 fw-bold fs-5"><a href="">Master</a></div>
+                    <div class="px-5 fw-bold fs-5"><a href="">Ph.D.</a></div>
+                    <div class="px-5 fw-bold fs-5"><a href="">Certificate</a></div>
+        </div>
+    </section>
+
+    <section class="content">
+
+        <h2 class="display-3 py-5 px-3 mx-auto col-12 col-md-8 col-lg-6 text-start bg-white">DEPARTMENT OF <span style="color: #c3002f;">COMPUTER SCIENCE</span> FACULTY OF SCIENCE AND TECHNOLOGY <span class="fw-bold" style="background: linear-gradient(90deg, #c3002f, #ffd13f); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;">THAMMASAT UNIVERSITY</span></h2>
+        <p1 class="fs-4 col-12 col-md-8 col-lg-6 d-flex justify-content-center align-items-center mx-auto fw-semibold">For FOUR DECADES, the Department of Computer Science at Thammasat University has been at the forefront of education,
+        research, and innovation. Since 1985, we have been shaping the minds of students, advancing technology, and contributing
+        to society through our dedication and expertise.</p1>
+
+    </section>
+
+    <section class="content1">
+        <div class="display-4 fw-medium">ELASTIC HEART</div>
+    </section>
+
+    <section class="content2">
+        <div class="bg"></div>
+        <div class="content">
+            <h1>CSTU</h1>
+            <p>Computer Science Thammasat University</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <div>
+                <h2 class="fw-bold display-3">CS<span style="color: #e4e4e4;">×</span>TU</h2>
+                <p class="fw-semibold">Computer Science<br>
+                    Thammasat University</p>
+            </div>
+    
+            <div>
+                <h3 class="fs-4 fw-semibold">About</h3>
+                <ul>
+                    <li><a href="#" class="fw-medium">ภาควิชา</a></li>
+                    <li><a href="#" class="fw-medium">หลักสูตร</a></li>
+                    <li><a href="#" class="fw-medium">ข่าวสาร</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3 class="fs-4 fw-semibold">contact</h3>
+                <ul>
+                    <li>Email : eservice@tu.ac.th or saraban_rangsit@tu.ac.th</li>
+                    <li>Tel : +66 (0) 2564 4440-79</li>
+                    <li>Location : 99 Moo 18 Paholyothin Road, Klong Nueng, Klong Luang, Pathumthani 12121 Thailand.</li>
+                </ul>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            © 2026 CS×TU — All Rights Reserved
+        </div>
+    </footer>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+            /* =========================
+               1) HEADER SCROLL EFFECT
+            ========================== */
+            const header = document.querySelector('.site-header');
+            const hero = document.querySelector('.hero');
+
+            if (header && hero) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > hero.offsetHeight) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                });
+            }
+
+            /* =========================
+               2) PARALLAX EFFECT
+            ========================== */
+            const bg = document.querySelector(".content2 .bg");
+
+            if (bg) {
+                window.addEventListener("scroll", () => {
+                    const scrolled = window.scrollY;
+                    bg.style.transform = `translateY(${scrolled * 0.3}px)`;
+                });
+            }
+
+            /* =========================
+               3) INTRO SCREEN (แสดงครั้งเดียว)
+            ========================== */
+            const intro = document.querySelector('.intro-screen');
+            const enterBtn = document.querySelector('.enter-btn');
+
+            if (intro) {
+
+                // ถ้าเคยเข้าเว็บแล้ว ไม่ต้องแสดง intro
+                if (localStorage.getItem("visited")) {
+                    intro.style.display = "none";
+                }
+
+                if (enterBtn) {
+                    enterBtn.addEventListener('click', () => {
+
+                        intro.classList.add('hide');
+
+                        // บันทึกว่าเคยเข้าแล้ว
+                        localStorage.setItem("visited", "true");
+
+                        setTimeout(() => {
+                            intro.style.display = "none";
+                        }, 800);
+                    });
+                }
+            }
+
+        });
+</script>
+
+</body>
+
+</html>
